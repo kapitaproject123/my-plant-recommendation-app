@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekomendasi Tanaman</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Rekomendasi Tanaman</h1>
+        <p>Masukkan data untuk mendapatkan rekomendasi tanaman:</p>
+        <form id="inputForm">
+            <!-- Form fields here -->
+        </form>
+        <div id="result" class="hidden">
+            <h2>Rekomendasi Tanaman</h2>
+            <p id="recommendationText"></p>
+            <img id="plantImage" alt="Plant Image">
+            <p id="descriptionText"></p>
+            <button onclick="resetForm()">Kembali</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
